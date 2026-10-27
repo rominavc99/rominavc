@@ -373,12 +373,12 @@ const projects = [
     name: { en: "Misidoku", es: "Misidoku" },
     meta: { en: "Personal project, mobile game", es: "Proyecto personal, juego móvil" },
     facts: {
-      en: { Role: "Creator and developer", Platform: "Android, coming to Google Play", Stack: "Flutter, Supabase, Python" },
-      es: { Rol: "Creadora y desarrolladora", Plataforma: "Android, pronto en Google Play", Stack: "Flutter, Supabase, Python" },
+      en: { Role: "Solo creator and developer", Built: "With AI agents (Claude Code)", Stack: "Flutter, Supabase, Python", When: "Oct 2026 – now" },
+      es: { Rol: "Creadora y desarrolladora, sola", Construido: "Con agentes de IA (Claude Code)", Stack: "Flutter, Supabase, Python", Fechas: "Oct 2026 – hoy" },
     },
     overview: {
-      en: "A relaxing logic puzzle with cats: one per row, one per column and one per color region, with no two touching, not even diagonally. I built it for fun, inspired by an existing game, Meowdoku, but I wanted to make it better and more complete, with new features so it never gets monotonous.",
-      es: "Un puzzle de lógica relajante con gatos: uno por fila, uno por columna y uno por región de color, sin que se toquen, ni en diagonal. Lo hice por gusto, inspirada en un juego que ya existía, Meowdoku, pero quise hacerlo mejor y más completo, con funcionalidades nuevas para que nunca se vuelva monótono.",
+      en: "A relaxing logic puzzle with cats: one per row, one per column and one per color region, with no two touching, not even diagonally. I built it for fun, inspired by an existing game, Meowdoku, but I wanted to make it better and more complete, with new features so it never gets monotonous. I build it on my own with AI agents, which I direct the way I would a development team.",
+      es: "Un puzzle de lógica relajante con gatos: uno por fila, uno por columna y uno por región de color, sin que se toquen, ni en diagonal. Lo hice por gusto, inspirada en un juego que ya existía, Meowdoku, pero quise hacerlo mejor y más completo, con funcionalidades nuevas para que nunca se vuelva monótono. Lo construyo sola con agentes de IA, a los que dirijo como dirigiría a un equipo de desarrollo.",
     },
     gallery: [
       { src: "assets/misidoku/home.webp", w: 1280, h: 800, caption: { en: "misidoku.site, the game’s landing page", es: "misidoku.site, la página del juego" } },
@@ -408,6 +408,7 @@ const projects = [
     },
     did: {
       en: [
+        "Directed AI agents (Claude Code) like a team: a phased work plan, a log of every design decision, and a definition of done where every task must pass the full test suite before it counts.",
         "A puzzle engine in pure Dart that runs the game on the phone, and the same rules in TypeScript on the server, both checked against one shared set of test cases so they never diverge.",
         "A level generator in Python that builds boards with a single solution, connected regions and colorblind-friendly colors, and never repeats a board.",
         "A server that is the authority: it replays each game’s move log before it counts, and flags impossible times or a tampered clock.",
@@ -416,6 +417,7 @@ const projects = [
         "Usability tests with three people before polishing the visuals.",
       ],
       es: [
+        "Dirigí agentes de IA (Claude Code) como a un equipo: un plan de trabajo por fases, un registro de cada decisión de diseño y una definición de terminado donde cada tarea debe pasar todas las pruebas antes de contar.",
         "Un motor del puzzle en Dart puro que corre la partida en el teléfono, y las mismas reglas en TypeScript en el servidor, probadas con un mismo conjunto de casos para que nunca difieran.",
         "Un generador de niveles en Python que crea tableros con una sola solución, regiones conectadas y colores aptos para daltonismo, sin repetir tableros.",
         "Un servidor que tiene la última palabra: reproduce el registro de movimientos de cada partida antes de contarla y marca tiempos imposibles o un reloj manipulado.",
@@ -439,8 +441,8 @@ const projects = [
     },
     values: { en: ["No guessing", "Fair play", "Never monotonous"], es: ["Sin adivinar", "Juego limpio", "Nunca monótono"] },
     outcome: {
-      en: "The game is complete through the shop, cosmetics, ads and achievements, and it is getting ready for Google Play.",
-      es: "El juego está completo hasta la tienda, los cosméticos, los anuncios y los logros, y se prepara para llegar a Google Play.",
+      en: "In its first month the game already has everything through the shop, cosmetics, ads and achievements, and it is getting ready for Google Play.",
+      es: "En su primer mes el juego ya tiene todo hasta la tienda, los cosméticos, los anuncios y los logros, y se prepara para llegar a Google Play.",
     },
     results: [
       { value: "1,500", label: { en: "boards: 1,000 in the campaign and 500 with several solutions", es: "tableros: 1000 de campaña y 500 con varias soluciones" } },
