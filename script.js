@@ -368,6 +368,87 @@ const projects = [
       { value: { en: "AI-aware", es: "IA medida" }, label: { en: "estimates that learn from every AI-assisted task", es: "estimaciones que aprenden de cada tarea asistida con IA" } },
     ],
   },
+  {
+    id: "misidoku",
+    name: { en: "Misidoku", es: "Misidoku" },
+    meta: { en: "Personal project, mobile game", es: "Proyecto personal, juego móvil" },
+    facts: {
+      en: { Role: "Creator and developer", Platform: "Android, coming to Google Play", Stack: "Flutter, Supabase, Python" },
+      es: { Rol: "Creadora y desarrolladora", Plataforma: "Android, pronto en Google Play", Stack: "Flutter, Supabase, Python" },
+    },
+    overview: {
+      en: "A relaxing logic puzzle with cats: one per row, one per column and one per color region, with no two touching, not even diagonally. I built it for fun, inspired by an existing game, Meowdoku, but I wanted to make it better and more complete, with new features so it never gets monotonous.",
+      es: "Un puzzle de lógica relajante con gatos: uno por fila, uno por columna y uno por región de color, sin que se toquen, ni en diagonal. Lo hice por gusto, inspirada en un juego que ya existía, Meowdoku, pero quise hacerlo mejor y más completo, con funcionalidades nuevas para que nunca se vuelva monótono.",
+    },
+    gallery: [
+      { src: "assets/misidoku/home.webp", w: 1280, h: 800, caption: { en: "misidoku.site, the game’s landing page", es: "misidoku.site, la página del juego" } },
+      { src: "assets/misidoku/rules.webp", w: 1280, h: 700, caption: { en: "The four rules, with a playable level 1 right on the page", es: "Las cuatro reglas, con el nivel 1 jugable en la misma página" } },
+    ],
+    modulesTitle: { en: "Game modes", es: "Modos de juego" },
+    modules: [
+      {
+        name: { en: "Campaign", es: "Campaña" },
+        desc: { en: "Chapters that grow from 5×5 to 9×9 boards, playable offline.", es: "Capítulos que crecen de tableros de 5×5 a 9×9, sin internet." },
+        stats: { en: ["1,000 levels", "Up to 3 stars per level"], es: ["1000 niveles", "Hasta 3 estrellas por nivel"] },
+      },
+      {
+        name: { en: "Daily challenge", es: "Reto diario" },
+        desc: { en: "The same board for everyone each day; only your first attempt counts for the ranking.", es: "El mismo tablero para todos cada día; solo tu primer intento cuenta para el ranking." },
+        stats: { en: ["Daily and weekly rankings", "Streaks and achievements"], es: ["Ranking diario y semanal", "Rachas y logros"] },
+      },
+      {
+        name: { en: "Mischievous cats", es: "Gatos traviesos" },
+        desc: { en: "Boards with several solutions: find one, or hunt them all to complete the collection.", es: "Tableros con varias soluciones: encuentra una, o búscalas todas para completar la colección." },
+        stats: { en: ["500 boards", "Offline"], es: ["500 tableros", "Sin internet"] },
+      },
+    ],
+    challenge: {
+      en: "No guessing, and no cheating. Every board must have exactly one solution reachable by pure deduction, and a ranking only means something if the results can be trusted.",
+      es: "Sin adivinar y sin trampas. Cada tablero debe tener una sola solución a la que se llegue solo deduciendo, y un ranking solo vale si se puede confiar en los resultados.",
+    },
+    did: {
+      en: [
+        "A puzzle engine in pure Dart that runs the game on the phone, and the same rules in TypeScript on the server, both checked against one shared set of test cases so they never diverge.",
+        "A level generator in Python that builds boards with a single solution, connected regions and colorblind-friendly colors, and never repeats a board.",
+        "A server that is the authority: it replays each game’s move log before it counts, and flags impossible times or a tampered clock.",
+        "An in-game currency built as an immutable ledger in Postgres, with idempotent transactions, plus a shop, cosmetics, board themes, streaks, achievements and ads with consent.",
+        "Spanish and English, accounts that start as a guest and link to Google later, and 60 fps measured on a low-end phone.",
+        "Usability tests with three people before polishing the visuals.",
+      ],
+      es: [
+        "Un motor del puzzle en Dart puro que corre la partida en el teléfono, y las mismas reglas en TypeScript en el servidor, probadas con un mismo conjunto de casos para que nunca difieran.",
+        "Un generador de niveles en Python que crea tableros con una sola solución, regiones conectadas y colores aptos para daltonismo, sin repetir tableros.",
+        "Un servidor que tiene la última palabra: reproduce el registro de movimientos de cada partida antes de contarla y marca tiempos imposibles o un reloj manipulado.",
+        "Una moneda del juego construida como un libro contable inmutable en Postgres, con transacciones idempotentes, además de tienda, cosméticos, temas de tablero, rachas, logros y anuncios con consentimiento.",
+        "Español e inglés, cuentas que empiezan como invitado y se vinculan con Google después, y 60 fps medidos en un teléfono de gama baja.",
+        "Pruebas de uso con tres personas antes de pulir lo visual.",
+      ],
+    },
+    spotlight: {
+      title: { en: "A solver that thinks like a person", es: "Un solver que piensa como una persona" },
+      body: {
+        en: [
+          "Every generated board goes through a solver that imitates a player who never guesses: it applies one deduction at a time, always trying the simplest technique first. If it gets stuck, the board is thrown away.",
+          "The techniques it needed set the difficulty, from very easy to expert, so a hard level is hard because of the reasoning it asks for, not because of its size. In the calibration, 100% of the published boards were solved without guessing.",
+        ],
+        es: [
+          "Cada tablero generado pasa por un solver que imita a una jugadora que nunca adivina: aplica una deducción a la vez, siempre probando primero la técnica más simple. Si se atora, el tablero se descarta.",
+          "Las técnicas que necesitó definen la dificultad, de muy fácil a experto, así que un nivel difícil lo es por el razonamiento que pide y no por su tamaño. En la calibración, el 100% de los tableros publicados se resolvió sin adivinar.",
+        ],
+      },
+    },
+    values: { en: ["No guessing", "Fair play", "Never monotonous"], es: ["Sin adivinar", "Juego limpio", "Nunca monótono"] },
+    outcome: {
+      en: "The game is complete through the shop, cosmetics, ads and achievements, and it is getting ready for Google Play.",
+      es: "El juego está completo hasta la tienda, los cosméticos, los anuncios y los logros, y se prepara para llegar a Google Play.",
+    },
+    results: [
+      { value: "1,500", label: { en: "boards: 1,000 in the campaign and 500 with several solutions", es: "tableros: 1000 de campaña y 500 con varias soluciones" } },
+      { value: "5,000+", label: { en: "automated tests across app, generator, database and server", es: "pruebas automáticas entre app, generador, base de datos y servidor" } },
+      { value: "60 fps", label: { en: "measured on a low-end Android phone", es: "medidos en un Android de gama baja" } },
+    ],
+    link: { href: "https://misidoku.site/", label: { en: "Visit misidoku.site", es: "Visitar misidoku.site" } },
+  },
 ];
 
 const CASE_HEADINGS = {
@@ -430,7 +511,7 @@ function renderProject(id) {
       <a href="${g.src}" target="_blank" rel="noopener"><img src="${g.src}" width="${g.w}" height="${g.h}" alt="${g.caption[lang]}" loading="lazy"></a>
       <figcaption>${g.caption[lang]}</figcaption>
     </figure>`).join("")}</div>` : ""}
-    ${p.modules ? `<h3>${h.modules}</h3>
+    ${p.modules ? `<h3>${p.modulesTitle?.[lang] ?? h.modules}</h3>
     <div class="case__modules">${p.modules.map((m) => `<article class="module">
       <h4>${m.name[lang]}</h4>
       <p>${m.desc[lang]}</p>
@@ -446,7 +527,8 @@ function renderProject(id) {
     <ul class="case__values">${p.values[lang].map((v) => `<li>${v}</li>`).join("")}</ul>
     <h3>${h.outcome}</h3>
     <p>${p.outcome[lang]}</p>
-    ${p.results ? `<ul class="results">${p.results.map((r) => `<li><strong>${r.value[lang] ?? r.value}</strong><span>${r.label[lang]}</span></li>`).join("")}</ul>` : ""}`;
+    ${p.results ? `<ul class="results">${p.results.map((r) => `<li><strong>${r.value[lang] ?? r.value}</strong><span>${r.label[lang]}</span></li>`).join("")}</ul>` : ""}
+    ${p.link ? `<p class="case__link"><a class="btn" href="${p.link.href}" target="_blank" rel="noopener">${p.link.label[lang]}</a></p>` : ""}`;
 }
 
 grid.addEventListener("click", (e) => {
