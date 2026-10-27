@@ -1,0 +1,6 @@
+# Private / local files — never publish
+/ENGLISH CV*.pdf
+/.claude/
+/.taste-skill/
+*.xlsx
+/image*.png
