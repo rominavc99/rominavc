@@ -714,6 +714,16 @@ a { color: inherit; }
 }
 .journey__step:nth-child(2) .journey__node { background: var(--pink-700); }
 .journey__step:nth-child(3) .journey__node { background: var(--violet); color: var(--plum); }
+.journey__step--loop {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 24px;
+  border: 2px dashed var(--plum-soft);
+  border-radius: 14px;
+}
+.journey__step--loop .journey__node { flex: none; margin: 0; font-size: 1.3rem; background: var(--pink-500); box-shadow: none; }
 .journey__step h3 { margin: 0 0 6px; font-size: 1.35rem; }
 .journey__step p { margin: 0; color: var(--plum-soft); }
 
