@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Romina Verdugo Corral, CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Pixelify+Sans:wght@600;700&display=block" rel="stylesheet">
+  <style>
+    @page { size: Letter; margin: 0; }
+
+    :root {
+      --ink: #1e2240;
+      --ink-soft: #4e5576;
+      --blue: #2f3fa8;
+      --peri: #5f78e6;
+      --peri-light: #c9d3f5;
+      --mist: #e9edf9;
+      --orange: #f0601e;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      font-family: "Figtree", sans-serif;
+      font-size: 8.9pt;
+      line-height: 1.36;
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------- Header: the night sky from the original CV ---------- */
+    .head {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 24px;
+      padding: 22px 40px 18px;
+      color: #fff;
+      background: var(--ink);
+    }
+    .head h1 {
+      margin: 0;
+      font-family: "Pixelify Sans", monospace;
+      font-weight: 700;
+      font-size: 25pt;
+      line-height: .95;
+      letter-spacing: .01em;
+      text-shadow: 3px 3px 0 var(--orange);
+    }
+    .head .role {
+      margin: 8px 0 0;
+      font-size: 10.5pt;
+      font-weight: 700;
+      color: var(--peri-light);
+    }
+    .contact {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: right;
+      font-size: 8.3pt;
+      line-height: 1.55;
+    }
+    .sky { position: absolute; inset: 0; pointer-events: none; }
+    .sky svg { position: absolute; shape-rendering: crispEdges; }
+    .sky i { position: absolute; width: 12px; height: 4px; background: #8fa3ef; opacity: .55; }
+
+    /* ---------- Layout ---------- */
+    .body {
+      display: grid;
+      grid-template-columns: 1fr 178px;
+      gap: 24px;
+      padding: 16px 40px 0;
+    }
+    section { margin-bottom: 11px; }
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 6px;
+      font-size: 10pt;
+      font-weight: 800;
+      letter-spacing: .02em;
+      color: var(--blue);
+    }
+    h2::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--peri);
+      box-shadow: 2px 2px 0 var(--orange);
+    }
+    p { margin: 0; }
+
+    .summary { font-size: 9.2pt; line-height: 1.45; }
+
+    .job { margin-bottom: 7px; break-inside: avoid; }
+    .job__top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+    .job h3 { margin: 0; font-size: 9.6pt; font-weight: 800; }
+    .job__date { flex: none; font-size: 8.3pt; font-weight: 600; color: var(--ink-soft); }
+    .job__org { margin: 0 0 3px; font-weight: 700; color: var(--peri); }
+    .job ul { margin: 0; padding-left: 13px; }
+    .job li { margin-bottom: 1.5px; }
+    .job li::marker { color: var(--orange); }
+    strong { font-weight: 700; }
+
+    /* Sidebar */
+    .side section { margin-bottom: 11px; }
+    .side ul { margin: 0; padding: 0; list-style: none; }
+    .side li { margin-bottom: 4px; line-height: 1.3; }
+    .side li span { display: block; font-size: 8.1pt; color: var(--ink-soft); }
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .tags li {
+      margin: 0;
+      padding: 0 6px;
+      font-size: 7.9pt;
+      font-weight: 600;
+      background: var(--mist);
+      border-radius: 4px;
+    }
+    .side h4 { margin: 6px 0 3px; font-size: 8.3pt; font-weight: 700; color: var(--ink-soft); }
+
+    .foot {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 10px;
+      background: repeating-linear-gradient(90deg, var(--peri) 0 24px, var(--ink) 24px 48px);
+    }
+    .page { position: relative; height: 11in; overflow: hidden; }
+  </style>
+</head>
+<body>
+<div class="page">
+  <header class="head">
+    <div class="sky" aria-hidden="true">
+      <svg viewBox="0 0 16 7" width="96" style="top:4px; right:290px; transform: rotate(152deg)">
+        <g id="m">
+          <rect x="10" y="0" width="2" height="1" fill="#e8442a"/><rect x="12" y="0" width="2" height="1" fill="#ff8a3d"/>
+          <rect x="6" y="1" width="2" height="1" fill="#e8442a"/><rect x="8" y="1" width="2" height="1" fill="#ff8a3d"/><rect x="10" y="1" width="3" height="1" fill="#ffd23f"/><rect x="13" y="1" width="2" height="1" fill="#3b4fd8"/>
+          <rect x="2" y="2" width="3" height="1" fill="#e8442a"/><rect x="5" y="2" width="2" height="1" fill="#ff8a3d"/><rect x="7" y="2" width="3" height="1" fill="#ffd23f"/><rect x="10" y="2" width="1" height="1" fill="#fff6d6"/><rect x="11" y="2" width="4" height="1" fill="#3b4fd8"/>
+          <rect x="0" y="3" width="2" height="1" fill="#e8442a"/><rect x="2" y="3" width="2" height="1" fill="#ff8a3d"/><rect x="4" y="3" width="3" height="1" fill="#ffd23f"/><rect x="7" y="3" width="3" height="1" fill="#fff6d6"/><rect x="10" y="3" width="2" height="1" fill="#3b4fd8"/><rect x="12" y="3" width="1" height="1" fill="#9fb4ff"/><rect x="13" y="3" width="3" height="1" fill="#3b4fd8"/>
+          <rect x="2" y="4" width="3" height="1" fill="#e8442a"/><rect x="5" y="4" width="2" height="1" fill="#ff8a3d"/><rect x="7" y="4" width="3" height="1" fill="#ffd23f"/><rect x="10" y="4" width="1" height="1" fill="#fff6d6"/><rect x="11" y="4" width="4" height="1" fill="#3b4fd8"/>
+          <rect x="6" y="5" width="2" height="1" fill="#e8442a"/><rect x="8" y="5" width="2" height="1" fill="#ff8a3d"/><rect x="10" y="5" width="3" height="1" fill="#ffd23f"/><rect x="13" y="5" width="2" height="1" fill="#3b4fd8"/>
+          <rect x="10" y="6" width="2" height="1" fill="#e8442a"/><rect x="12" y="6" width="2" height="1" fill="#ff8a3d"/>
+        </g>
+      </svg>
+      <svg viewBox="0 0 16 7" width="56" style="bottom:6px; left:384px; transform: rotate(152deg)"><use href="#m"/></svg>
+      <i style="top:18px; left:44px"></i><i style="top:30px; left:410px"></i><i style="bottom:14px; left:478px"></i><i style="top:14px; right:44px"></i><i style="bottom:30px; right:240px"></i>
+    </div>
+    <div style="position:relative">
+      <h1>Romina Verdugo<br>Corral</h1>
+      <p class="role">Project Manager with a development background</p>
+    </div>
+    <ul class="contact">
+      <li>Sonora, México</li>
+      <li><a href="mailto:animor_0912@hotmail.com">animor_0912@hotmail.com</a></li>
+      <li><a href="https://rominavc.site">rominavc.site</a></li>
+      <li><a href="https://www.linkedin.com/in/romina-verdugo-b71208198">linkedin.com/in/romina-verdugo-b71208198</a></li>
+      <li><a href="https://github.com/rominavc99">github.com/rominavc99</a></li>
+    </ul>
+  </header>
+
+  <div class="body">
+    <main>
+      <section>
+        <h2>Profile</h2>
+        <p class="summary">Project manager who used to write the code. I lead software teams under CMMI level 3 and 5 practices, from requirements gathering to client acceptance, and I use data to improve how teams deliver. I studied multimedia engineering, worked as a full-stack developer, and contributed to my company’s CMMI level 5 certification in 2026. Bilingual in Spanish and English.</p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="job">
+          <div class="job__top"><h3>Project Manager</h3><span class="job__date">Nov 2024 – Present</span></div>
+          <p class="job__org">Mediaérea</p>
+          <ul>
+            <li><strong>Customs platform (federal agency, confidential):</strong> led two modules with two teams of 5 (3 devs, 1 QA, 1 UI/UX each) across 14 iterations. Delivered the original scope on time, re-estimated changes from demos, and closed every requirement in formal acceptance sessions with the client.</li>
+            <li><strong>Two CMMI 5 corrective actions</strong> with root cause and statistical analysis: moved peer reviews into the company ERP (peer-review defect density 0.29 → 1.12, p &lt; 0.001) and migrated to GitLab with protected branches (rework −88.7%, from 6.0% to 0.68%, p = 0.005).</li>
+            <li><strong>CMMI level 5 certification (July 2026):</strong> refined procedures with the SIE Center consultant, trained PMs, developers, QA and technical writers on every update, and presented CAR, DAR and project management practices at the appraisal.</li>
+            <li><strong>MA-ERP, internal project platform</strong> (Laravel, Tailwind; 2 devs, 1 QA): PM since Feb 2025. Backlog, Kanban, peer reviews, risks, retrospectives and real-time indicators, used by the whole company (up to 30 projects and 150+ users). Added AI-assisted effort tracking that feeds an organizational AI function point for estimates.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__top"><h3>Junior Django Developer</h3><span class="job__date">May 2024 – Nov 2024</span></div>
+          <p class="job__org">Innovation Workshop · Remote</p>
+          <ul>
+            <li>Built Django solutions and user interfaces with HTML, CSS and JavaScript; REST APIs with Django REST Framework and system maintenance.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__top"><h3>Full-stack Developer</h3><span class="job__date">Jun 2023 – Nov 2024</span></div>
+          <p class="job__org">Mediaérea</p>
+          <ul>
+            <li>Developed backend solutions in Python and Django and front-end interfaces with Bootstrap, HTML, CSS and JavaScript on the Metronic framework.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job__top"><h3>HR Intern, Backend</h3><span class="job__date">Jun 2023 – Jan 2024</span></div>
+          <p class="job__org">5CA</p>
+          <ul><li>Configured HR systems in SAP SuccessFactors.</li></ul>
+        </div>
+
+        <div class="job">
+          <div class="job__top"><h3>Player Support Representative</h3><span class="job__date">Mar 2022 – Jun 2023</span></div>
+          <p class="job__org">5CA · Remote</p>
+          <ul><li>Bilingual (English and Spanish) technical and account support by chat and email.</li></ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Personal project</h2>
+        <div class="job">
+          <div class="job__top"><h3>Misidoku, cat logic puzzle for Android</h3><span class="job__date">Oct 2026 – Present</span></div>
+          <p class="job__org"><a href="https://misidoku.site">misidoku.site</a></p>
+          <ul>
+            <li>Built solo with AI agents (Claude Code), directed like a team: phased work plan, decision log and a definition of done backed by 5,000+ automated tests.</li>
+            <li>Flutter app, Supabase backend that replays every game before it counts in the rankings, and a Python generator whose human-style solver guarantees 1,500 boards solvable without guessing.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <aside class="side">
+      <section>
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Master’s in Web User Interface Design and Development</strong><span>UNIR, 2024 – 2025</span></li>
+          <li><strong>Diploma in Soft Skills and Leadership</strong><span>UNIR, 2023 – 2024</span></li>
+          <li><strong>B.Eng. Multimedia Production Engineering</strong><span>Universidad La Salle Noroeste, 2018 – 2023. GPA 9.8</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Certifications</h2>
+        <ul>
+          <li><strong>Product Owner</strong><span>CertiProf, 2024</span></li>
+          <li><strong>Web Development Bootcamp</strong><span>The App Brewery, 2024</span></li>
+          <li><strong>EF SET English</strong><span>EF SET, 2023</span></li>
+          <li><strong>UI/UX Design</strong><span>California Institute of the Arts, 2019</span></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <h4>Project management</h4>
+        <ul class="tags">
+          <li>CMMI 3 and 5</li><li>Scrum</li><li>Kanban</li><li>Estimation</li><li>Function points</li><li>Risk management</li><li>Requirements</li><li>Root cause analysis</li><li>Statistical process control</li><li>Stakeholders</li>
+        </ul>
+        <h4>Development</h4>
+        <ul class="tags">
+          <li>Python</li><li>Django</li><li>JavaScript</li><li>React</li><li>HTML and CSS</li><li>Tailwind</li><li>Bootstrap</li><li>Git and GitLab</li>
+        </ul>
+        <h4>Tools</h4>
+        <ul class="tags">
+          <li>Claude Code</li><li>Minitab</li><li>SharePoint</li><li>Figma</li><li>Illustrator</li><li>After Effects</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li><strong>Spanish</strong><span>Native</span></li>
+          <li><strong>English</strong><span>Professional, EF SET certified</span></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <div class="foot" aria-hidden="true"></div>
+</div>
+</body>
+</html>
