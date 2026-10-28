@@ -560,6 +560,7 @@ function setLang(next) {
   document.querySelectorAll("[data-i18n-label]").forEach((el) => {
     el.setAttribute("aria-label", LABELS[el.dataset.i18nLabel][lang]);
   });
+  document.getElementById("cv-link").href = lang === "es" ? "assets/romina-verdugo-cv-es.pdf" : "assets/romina-verdugo-cv.pdf";
   toggle.textContent = lang === "es" ? "EN" : "ES";
   toggle.setAttribute("aria-label", lang === "es" ? "Switch to English" : "Cambiar a español");
   renderGrid();
